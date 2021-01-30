@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+section#corpo-full{
+	width: 980px;
+
+}
+iframe{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+iframe#frame-spec{
+	width: 410px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}

@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script language="javascript" src="script/funcoes.js"></script>
+    <script type="text/javascript">
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cqtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cvalue').value = tot;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="linha">
+                <header>
+                    <div class="coluna col4">
+                        <h1 class="logo"><a href="index.html">Choco+)</a></h1>
+                        <h2 class="logo">O prazer em ser nobre</h2>
+                                    
+                    </div>
+                    <div class="coluna col8">                       
+                            <ul class="menu inline sem-marcador">
+                                <li onmouseover="mudaicone('img/home.png')" onmouseout="mudaicone('img/contato.png')" ><a href="index.html">Home</a></li>
+                                <li><a href="especificacoes.html"onmouseover="mudaicone('img/especificacoes.png')" onmouseout="mudaicone('img/contato.png')">Monte seu Ovo</a></li>
+                                <li onmouseover="mudaicone('img/fotos.png')" onmouseout="mudaicone('img/contato.png')" ><a href="fotos.html">Quem somos</a></li>
+                                <li onmouseover="mudaicone('img/contato.png')" onmouseout="mudaicone('img/contato.png')" ><a href="fale-conosco.html">Fale Conosco</a></li>
+                                <img src="img/contato.png" id="icone" alt="" class="oculos" />
+                            </ul>           
+                    </div>
+                </header>               
+            </div>
+        </div>
+        <section> 
+            <article>          
+                <h2 class="titulo2">Monte o seu </h2>
+                <h1 class="titulo2"> Monte o seu ovo de páscoa</h1>
+                <h3 class="titulo3">Atualizado em 20/Janeiro/2020</h3>
+                <form method="post" id="fcontato" action="mailto: chocomaisofficial@gmail.com" oninput="calc_total();">           
+                       
+					   <fieldset id="usuario">
+                            
+							<legend>Monte o seu</legend>
+                                <p><label for="cuf">Escolha seu ovo:<select name="tuf" id="cuf" >
+                                                                <option>Ovo Tradicional</option>
+                                                                <option>Ovo de Colher</option>
+                                                                <option>Ovo Trufado</option>
+                                                                <option>Ovo Especial</option>
+                                </select> 
+                                </label></p>
+								
+								
+                                <p><label for="cuf">Escolha o tamanho:<select name="tuf" id="cuf" >
+                                                                <option>250g</option>
+                                                                <option>500g</option>
+                                                                <option>1Kg</option>
+                                </select> 
+                                </label></p>
+                                
+								<p><label for="cuf">Escolha o Chocolate:<select name="tuf" id="cuf" >
+                                                                <option>Ao leite</option>
+                                                                <option>Branco</option>
+                                                                <option>Meio Amargo</option>
+																<option>DIET</option>
+                                </select> 
+                                </label></p>
+								
+								
+								<p><label for="cuf">Escolha o 1º recheio:<select name="tuf" id="recheio1" >
+                                                                <option value="1">Brigadeiro</option>
+                                                                <option value="1">Ninho</option>
+																<option value="1">Beijinho</option>
+																<option value="1">Sensação</option>
+																<option value="2">Ganache</option>
+																<option value="2">Paçoca</option>
+																<option value="2">Ovomaltine</option>
+                                </select> 
+                                </label></p>
+								
+								<p><label for="cuf">Escolha o 2º recheio:<select name="tuf" id="recheio2" >
+                                                                <option value="1">Brigadeiro</option>
+                                                                <option value="1">Ninho</option>
+																<option value="1">Beijinho</option>
+																<option value="1">Sensação</option>
+																<option value="2">Ganache</option>
+																<option value="2">Paçoca</option>
+																<option value="2">Ovomaltine</option>
+                                </select> 
+                                </label></p>
+								
+								<p><label for="cqtd">Quantidade:</label><input type="number" name="tqtd" id="cqtd" min="0" max="9"> </p>
+								
+								<p><label for="cmsg"></label><textarea name="tmsg" id="cmsg" placeholder="Observações" cols="25" rows="3"></textarea></P>
+								
+                        </fieldset>
+						<input type="image" src="img/botao-add.png" name="tbotaoadd" id="cbotaoadd">
+						<input type="image" src="img/botao-rmv.png" name="tbotaormv" id="cbotaormv">
+						
+
+							
+							
+							 <fieldset id="endereco">
+                           
+                            <legend>Frete</legend>
+
+                                <p><label for="cuf">Selecione a forma de entrega:<select name="tuf" id="cuf" >
+                                                                <option>Retirar na Loja 1 - R. Kaliu Mrad, n9, Centro, Capim Branco/MG.</option>
+                                                                <option>Retirar na Loja 2 - R. , , Mocambeiro, Matozinhos/MG.</option>
+                                                                <option>Capim Branco - MG</option>
+                                                                <option>Mocambeiro - MTZ-MG</option>
+                                                                <option>Matozinhos - MG</option>
+                                                                <option>Retirada na Cidade Administrativa - BH/MG</option>
+																<option>Retirada no Minas Shopping - BH/MG</option>
+																
+                                </select> 
+                                </label></p>
+                                <p><label for="ccity">*Haverá datas especificas de entrega que serão enviadas na mensagem de confirmação do pedido.</label></p>
+                        </fieldset>
+							
+							
+							<fieldset id="pedido2">
+                            <legend>Valor do pedido</legend>
+                               <p><label for="cvalue">Preço Total: R$</label><input type="text" name="tvalue" id="cvalue" placeholder="Total a pagar" readonly > </p>       
+                            </fieldset>
+							
+							<fieldset id="cliente">
+							<legend> Identificação do Cliente</legend>
+                                <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome"  size="30" maxlength="30" placeholder="Nome Completo" /> </p>
+                                <p><label for="ccelular"> Celular:</label><input type="phone" name="tcelular" id="ccelular" size="11" maxlength="11" placeholder="Número" /> </p>
+                             </fieldset>
+
+                        <input type="image" src="img/botao-enviar.png" name="tbotao" id="cbotao">
+                </form>
+            </article>
+        </section>
+        <div class="footer">
+            <div class="linha">
+                <footer>
+                    <p class="t1">&copy;Copyright  2021 - by Tree Blue</p>
+                    <p class="t2">Facebook | Twitter</p>
+                </footer>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
